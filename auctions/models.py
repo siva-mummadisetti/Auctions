@@ -7,7 +7,7 @@ class User(AbstractUser): # AbstractUser is not an abstract class, it has fields
         return f"{self.username}"
 
 class Listing(models.Model):
-    ad_title = models.CharField(max_length = 54)
+    ad_title = models.TextField(max_length = 54)
     description = models.TextField(max_length = 155)
     img_url = models.TextField(max_length = 2000)
     category = models.TextField(max_length = 30, blank = True)
