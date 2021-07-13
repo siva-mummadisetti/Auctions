@@ -7,12 +7,12 @@ class User(AbstractUser): # AbstractUser is not an abstract class, it has fields
         return f"{self.username}"
 
 class Listing(models.Model):
-    ad_title = models.TextField(max_length = 54)
-    description = models.TextField(max_length = 155)
-    img_url = models.TextField(max_length = 2000)
-    category = models.TextField(max_length = 30, blank = True)
+    ad_title = models.TextField()
+    description = models.TextField()
+    img_url = models.TextField()
+    category = models.TextField()
     price = models.IntegerField()
-    time = models.TextField(max_length = 20)
+    time = models.TextField()
     user = models.ForeignKey(User, on_delete = models.CASCADE, related_name = "listing")
     flag = models.BooleanField(default=True)
     def __str__(self):
@@ -26,9 +26,9 @@ class Bid(models.Model):
         return f"{self.quote}"
 
 class Comment(models.Model):
-    text = models.TextField(max_length = 500)
+    text = models.TextField()
     user = models.ForeignKey(User, on_delete = models.CASCADE)
     listing = models.ForeignKey(Listing, on_delete = models.CASCADE, related_name = "comment")
-    time = models.TextField(max_length = 20)
+    time = models.TextField()
     def __str__(self):
         return f"{self.text}"
