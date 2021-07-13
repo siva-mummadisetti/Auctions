@@ -74,10 +74,6 @@ def register(request):
             return render(request, "auctions/register.html", {
                 "message": "Username already taken."
             })
-        except ValueError:
-            return render(request, "auctions/register.html", {
-                "message": "Please fill all the fields."
-            })
         login(request, user)
         return HttpResponseRedirect(reverse("index"))
     else:
