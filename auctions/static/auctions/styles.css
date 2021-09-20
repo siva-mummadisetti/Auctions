@@ -21,11 +21,11 @@ body {
         }
     }
 #title{
+    color: rgba(0, 0, 0, 0.795);
     position: relative;
     animation-name: custom;
     animation-duration: 2s;
     font-size: 35px;
-    color: rgba(0, 0, 0, 0.795);
-    font: weight 330px;
+    font-weight 330px;
     font-family: sans-serif;
 }
