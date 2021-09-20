@@ -2,6 +2,28 @@ body {
     padding: 10px;
 }
 
+@keyframes custom{
+        0%{
+            left: 0%;
+        }
+        50%{
+            font-size: 60px;
+            background-color:red;
+        }
+        75%{
+            left: 45%
+        }
+        80%{
+            font-size: 45px;
+        }
+        100%{
+            left: 0%;
+        }
+    }
 #title{
     color:black;
+    position: relative;
+    animation-name: custom;
+    animation-duration: 2s;
+    font-size: 45px;
 }
