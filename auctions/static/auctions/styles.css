@@ -21,7 +21,6 @@ body {
         }
     }
 #title{
-    color:black;
     position: relative;
     animation-name: custom;
     animation-duration: 2s;
