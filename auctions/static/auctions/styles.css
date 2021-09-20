@@ -11,10 +11,10 @@ body {
             background-color:red;
         }
         75%{
-            left: 45%
+            left: 35%
         }
         80%{
-            font-size: 45px;
+            font-size: 35px;
         }
         100%{
             left: 0%;
@@ -25,5 +25,8 @@ body {
     position: relative;
     animation-name: custom;
     animation-duration: 2s;
-    font-size: 45px;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.795);
+    font: weight 330px;
+    font-family: sans-serif;
 }
