@@ -12,8 +12,8 @@
             {% endblock %}
     </head>
     <body>
-        <a style="color:black; padding:0;"  class="nav-link" href="{% url 'index' %}">
-            <h1>Auctions</h1>
+        <a class="nav-link" href="{% url 'index' %}">
+            <h1 id = "title">Auctions</h1>
         </a>
         <div>
             {% if user.is_authenticated %}
