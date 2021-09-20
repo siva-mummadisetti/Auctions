@@ -29,3 +29,7 @@ body {
     font-family: 'Segoe UI';
     font-weight: bolder;
 }
+#logo1{
+    height: 45px;
+    width: 45px;
+}
